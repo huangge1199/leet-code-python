@@ -58,9 +58,14 @@ from typing import List
 
 class Solution:
     def countBits(self, n: int) -> List[int]:
-        nums = [0] * n
-        for i in range(n):
+        nums = [0] * (n + 1)
+        for i in range(n + 1):
             for j in range(32):
                 nums[i] = nums[i] + (i >> j) & 1
         return nums
+
+
 # leetcode submit region end(Prohibit modification and deletion)
+
+if __name__ == "__main__":
+    Solution.countBits(Solution, 5)
