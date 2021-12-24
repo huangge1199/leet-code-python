@@ -61,7 +61,7 @@ class Solution:
         nums = [0] * (n + 1)
         for i in range(n + 1):
             for j in range(32):
-                nums[i] = nums[i] + (i >> j) & 1
+                nums[i] += (i >> j) & 1
         return nums
 
 
