@@ -33,6 +33,6 @@ class Solution:
             dfs(left.left, right.right, not level)
             dfs(left.right, right.left, not level)
 
-        dfs(root.left, root.right, True)
+        dfs(root.left,root.right, True)
         return root
 # leetcode submit region end(Prohibit modification and deletion)
